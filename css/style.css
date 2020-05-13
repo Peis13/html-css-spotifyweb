@@ -1,0 +1,98 @@
+/* COMMON */
+
+.ms-wrapper {
+  height: calc( 100vh - 100px );
+  background-color: blue;
+}
+
+.ms-navbar,
+.ms-content {
+  height: 100%;
+  float: left;
+}
+
+.ms-banner,
+.ms-content {
+  width: calc( 100% - 300px );
+}
+
+/* END COMMON */
+
+/* MAIN */
+
+/* Navbar */
+.ms-navbar {
+  width: 300px;
+  overflow-y: hidden;
+  background-color: green;
+  position: relative;
+}
+
+.ms-logo {
+  height: 70px;
+  background-color: yellow;
+}
+
+.ms-menu {
+  height: 130px;
+  background-color: coral;
+}
+
+.ms-playlist {
+  min-height: 100px;
+  height: calc( 100% - (70px + 130px + 100px ) );
+  overflow-y: auto;
+  background-color: orange;
+}
+
+.ms-account {
+  height: 100px;
+  background-color: purple;
+}
+
+/* Content */
+.ms-banner {
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.ms-content {
+  overflow-y: auto;
+  background-color: pink;
+}
+/* END MAIN */
+
+/* FOOTER */
+.ms-player {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+}
+/* END FOOTER */
+
+/* MEDIA QUERY */
+
+/* Xs */
+@media screen and ( max-width: 767px ) {
+
+  .ms-banner,
+  .ms-content {
+    width: calc( 100% - 50px );
+  }
+
+  /* Navbar */
+  .ms-navbar {
+    width: 50px;
+    background-color: green;
+  }
+
+  .ms-menu {
+    min-height: 100px;
+    height: calc( 130px + ( 100% - (70px + 130px + 100px ) ) );
+    background-color: coral;
+  }
+
+}
