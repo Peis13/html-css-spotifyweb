@@ -1,72 +1,154 @@
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+}
+/* END RESET */
+
+
 /* COMMON */
+h3 {
+  margin-top: 0;
+  text-transform: uppercase;
+}
 
 .ms-wrapper {
-  height: calc( 100vh - 100px );
-  background-color: blue;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  height: 100vh;
+}
+
+.ms-flex {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .ms-navbar,
-.ms-content {
+.content {
   height: 100%;
   float: left;
 }
 
-.ms-banner,
-.ms-content {
-  width: calc( 100% - 300px );
+.banner,
+.content {
+  width: calc( 100% - 320px );
 }
-
 /* END COMMON */
 
+
 /* MAIN */
+main {
+  height: calc( 100vh - 100px );
+  background-color: blue;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
 
 /* Navbar */
 .ms-navbar {
-  width: 300px;
-  overflow-y: hidden;
+  width: 320px;
   background-color: green;
-  position: relative;
+  overflow: hidden;
 }
 
-.ms-logo {
-  height: 70px;
+.nav-item {
+  padding: 10px;
+}
+
+/* logo */
+.logo {
   background-color: yellow;
 }
 
-.ms-menu {
-  height: 130px;
+.logo img {
+  height: 50px;
+}
+
+/* menù */
+.nav-menu {
   background-color: coral;
 }
 
-.ms-playlist {
+.nav-menu li {
+  margin: 10px 0;
+}
+
+/* playlist */
+.playlist {
   min-height: 100px;
-  height: calc( 100% - (70px + 130px + 100px ) );
-  overflow-y: auto;
+  overflow: hidden;
+  flex-grow: 1;
+  text-transform: capitalize;
   background-color: orange;
 }
 
-.ms-account {
-  height: 100px;
+.playlist i {
+  padding: 10px;
+  margin-right: 5px;
+  font-size: 25px;
+  background-color: white;
+}
+
+.my-list {
+  height: calc( 100% - 70px );
+  overflow: auto;
+}
+
+/* user */
+.user {
   background-color: purple;
 }
 
+.user hr {
+  margin: 10px 0;
+}
+
+.install .icon {
+  width: 20px;
+}
+
+.account .icon {
+  border-radius: 50%;
+  background-color: #808080;
+}
+/* end Navbar */
+
+
 /* Content */
-.ms-banner {
+.banner {
   height: 70px;
+  text-align: right;
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   right: 0;
 }
 
-.ms-content {
+.content {
+  padding-top: 70px;
   overflow-y: auto;
   background-color: pink;
 }
+/* end Content */
+
 /* END MAIN */
 
+
 /* FOOTER */
-.ms-player {
+.player {
   width: 100%;
   height: 100px;
   background-color: red;
@@ -78,21 +160,36 @@
 /* Xs */
 @media screen and ( max-width: 767px ) {
 
-  .ms-banner,
-  .ms-content {
-    width: calc( 100% - 50px );
+  .banner,
+  .content {
+    width: calc( 100% - 60px );
+  }
+
+  .icon {
+    margin-right: 0px;
   }
 
   /* Navbar */
   .ms-navbar {
-    width: 50px;
+    width: 60px;
+    text-align: center;
     background-color: green;
   }
 
-  .ms-menu {
-    min-height: 100px;
-    height: calc( 130px + ( 100% - (70px + 130px + 100px ) ) );
+  .logo img {
+    height: 40px;
+  }
+
+  /* menù */
+  .nav-menu {
+    flex-grow: 1;
     background-color: coral;
+  }
+
+  /* user */
+
+  .user hr {
+    border-color: transparent;
   }
 
 }
