@@ -46,8 +46,9 @@ h5 {
 
 .banner,
 .content {
-  width: calc( 100% - 320px );
+  width: calc( 100% - 60px );
 }
+
 
 .description {
   text-transform: capitalize;
@@ -89,16 +90,17 @@ main {
 .icon {
   width: 30px;
   height: 30px;
-  margin-right: 5px;
+  margin-right: 0px;
   vertical-align: middle;
 }
 
 /* NAVBAR */
 .ms-navbar {
-  width: 320px;
-  background-color: green;
+  width: 60px;
+  text-align: center;
   overflow: hidden;
 }
+
 
 .ms-navbar > .flex {
   flex-direction: column;
@@ -114,11 +116,12 @@ main {
 }
 
 .logo img {
-  height: 50px;
+  height: 40px;
 }
 
 /* Menù */
 .nav-menu {
+  flex-grow: 1;
   background-color: coral;
 }
 
@@ -153,7 +156,9 @@ main {
   background-color: purple;
 }
 
+/* User */
 .user hr {
+  border-color: transparent;
   margin: 10px 0;
 }
 
@@ -176,6 +181,7 @@ main {
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 99;
 }
 
 .banner > .flex {
@@ -236,7 +242,7 @@ main {
 
 .section > .flex {
   /* justify-content: space-between; */
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 .section .title {
@@ -248,8 +254,9 @@ main {
 }
 
 .track {
-  width: calc(( 100% / 6 ) - 2%);
-  margin-right: 2%;
+  width: calc(( 100% / 2 ) - 10px);
+  margin-right: 10px;
+  min-width: 100px;
 }
 
 .cover {
@@ -290,6 +297,8 @@ main {
 
 
 /* FOOTER */
+
+/* PLAYER */
 .player {
   width: 100%;
   height: 80px;
@@ -304,7 +313,7 @@ main {
 
 .current-song,
 .control {
-  min-width: 25%;
+  min-width: 30%;
 }
 
 .bar {
@@ -389,48 +398,62 @@ main {
 
 /* MEDIA QUERY */
 
-/* Xs */
-@media screen and ( max-width: 767px ) {
+/* Sm */
+@media screen and ( min-width: 768px ) {
 
   .banner,
   .content {
-    width: calc( 100% - 60px );
+    width: calc( 100% - 300px );
   }
 
   .icon {
-    margin-right: 0px;
+    margin-right: 5px;
   }
 
   /* NAVBAR */
   .ms-navbar {
-    width: 60px;
-    text-align: center;
+    width: 300px;
+    text-align: LEFT;
+    background-color: green;
   }
 
   .logo img {
-    height: 40px;
+    height: 50px;
   }
 
   /* Menù */
   .nav-menu {
-    flex-grow: 1;
+    flex-grow: 0;
     background-color: coral;
   }
 
   /* User */
   .user hr {
-    border-color: transparent;
+    border-color: #fff;
   }
 
   /* PLAYER */
   .current-song,
   .control {
-    min-width: 30%;
+    min-width: 25%;
   }
+}
 
+/* Md */
+@media screen and ( min-width: 992px ) {
+
+  .track {
+    width: calc(( 100% / 4 ) - 10px);
+    margin-right: 10px;
+    min-width: 100px;
+  }
 }
 
 /* Lg */
 @media screen and ( min-width: 1200px ) {
 
+  .track {
+    width: calc(( 100% / 6 ) - 10px);
+    margin-right: 10px;
+  }
 }
