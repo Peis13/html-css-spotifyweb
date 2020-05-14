@@ -26,8 +26,8 @@
             </div>
 
             <!-- nav-Menù -->
-            <ul class="nav-menu nav-item">
-              <li>
+            <ul class="nav-menu">
+              <li class="active">
                 <a href="#">
                   <img class="icon" src="img/home.svg" alt="">
                   <span class="hidden-xs">
@@ -68,34 +68,54 @@
               <!-- my-list -->
               <ul class="my-list">
                 <li>
-                  nuova playlist
+                  <span>
+                    nuova playlist
+                  </span>
                 </li>
                 <li>
-                  nuova playlist
+                  <span>
+                    nuova playlist
+                  </span>
                 </li>
                 <li>
-                  nuova playlist
+                  <span>
+                    nuova playlist
+                  </span>
                 </li>
                 <li>
-                  nuova playlist
+                  <span>
+                    nuova playlist
+                  </span>
                 </li>
                 <li>
-                  nuova playlist
+                  <span>
+                    nuova playlist
+                  </span>
                 </li>
                 <li>
-                  nuova playlist
+                  <span>
+                    nuova playlist
+                  </span>
                 </li>
                 <li>
-                  nuova playlist
+                  <span>
+                    nuova playlist
+                  </span>
                 </li>
                 <li>
-                  nuova playlist
+                  <span>
+                    nuova playlist
+                  </span>
                 </li>
                 <li>
-                  nuova playlist
+                  <span>
+                    nuova playlist
+                  </span>
                 </li>
                 <li>
-                  nuova playlist
+                  <span>
+                    nuova playlist
+                  </span>
                 </li>
               </ul>
 
@@ -152,38 +172,38 @@
                 <li>
                   <a href="#">
                     in evidenza
+                    <div class="active underline"></div>
                   </a>
-                  <div class="active underline"></div>
                 </li>
                 <li>
                   <a href="#">
                     podcast
+                    <div class="underline"></div>
                   </a>
-                  <div class="underline"></div>
                 </li>
                 <li>
                   <a href="#">
                     classifiche
+                    <div class="underline"></div>
                   </a>
-                  <div class="underline"></div>
                 </li>
                 <li>
                   <a href="#">
                     generi e mood
+                    <div class="underline"></div>
                   </a>
-                  <div class="underline"></div>
                 </li>
                 <li>
                   <a href="#">
                     nuove uscite
+                    <div class="underline"></div>
                   </a>
-                  <div class="underline"></div>
                 </li>
                 <li>
                   <a href="#">
                     scopri
+                    <div class="underline"></div>
                   </a>
-                  <div class="underline"></div>
                 </li>
               </ul>
             </div>
@@ -195,7 +215,11 @@
 
             <!-- recently played -->
             <section id="recently" class="section">
-              <h2>Recently played</h2>
+
+              <!-- Intro -->
+              <div class="intro">
+                <h2>Recently played</h2>
+              </div>
 
               <!-- Songs -->
               <ul class="songs flex">
@@ -300,8 +324,12 @@
 
             <!-- created for you -->
             <section id="created" class="section">
-              <h2>Created for John Doe</h2>
-              <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+
+              <!-- Intro -->
+              <div class="intro">
+                <h2>Created for John Doe</h2>
+                <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+              </div>
 
               <!-- Songs -->
               <ul class="songs flex">
@@ -340,8 +368,12 @@
 
             <!-- artists -->
             <section id="artists" class="section">
-              <h2>Artisti più popolari</h2>
-              <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+
+              <!-- Intro -->
+              <div class="intro">
+                <h2>Artisti più popolari</h2>
+                <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+              </div>
 
               <!-- Songs -->
               <ul class="songs flex">
@@ -403,7 +435,7 @@
                 <!-- description -->
                 <div class="description">
                   <h5>sinister</h5>
-                  <p>nome brano</p>
+                  <span class="song-title">nome brano</span>
                 </div>
 
                 <!-- tips -->
@@ -448,14 +480,18 @@
               <div class="flex">
                 <i class="fas fa-list-ul"></i>
                 <i class="fas fa-desktop"></i>
-                <i class="fas fa-volume-up"></i>
 
-                <!-- volume line -->
-                <div class=" volume bar">
-                  <div class="cursor bar">
-                    <i class="fas fa-circle"></i>
+                <div class="volume">
+                  <i class="fas fa-volume-up"></i>
+
+                  <!-- volume line -->
+                  <div class="volume bar">
+                    <div class="cursor bar">
+                      <i class="fas fa-circle"></i>
+                    </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
