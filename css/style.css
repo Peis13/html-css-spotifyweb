@@ -407,30 +407,6 @@ main {
   min-width: 30%;
 }
 
-.bar {
-  height: 4px;
-  margin: 10px;
-  border-radius: 5px;
-  background-color: #6c6c6c;
-  width: 50%;
-  vertical-align: middle;
-}
-
-.cursor.bar {
-  width: 30%;
-  margin: 0;
-  background-color: #fff;
-  position: relative;
-}
-
-.cursor.bar i {
-  position: absolute;
-  top: calc( 50% );
-  left: 100%;
-  transform: translateY( -50% );
-  display: none;
-}
-
 /* Current song */
 .current-song > .flex {
   justify-content: flex-start;
@@ -472,6 +448,30 @@ main {
 
 .time.bar {
   display: inline-block;
+}
+
+.bar {
+  height: 4px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #6c6c6c;
+  width: 50%;
+  vertical-align: middle;
+}
+
+.cursor.bar {
+  width: 30%;
+  margin: 0;
+  background-color: #fff;
+  position: relative;
+}
+
+.cursor.bar i {
+  position: absolute;
+  top: calc( 50% );
+  left: 100%;
+  transform: translateY( -50% );
+  display: none;
 }
 
 .time-line::before {
@@ -531,7 +531,7 @@ main {
   /* PLAYER */
   .current-song,
   .control {
-    min-width: 25%;
+    width: 25%;
   }
 }
 
